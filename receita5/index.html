@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receita - Sucos</title>
+</head>
+<body>
+    <div>
+        <a href="L" id="linkCarregar">Carregando sucos...</a>
+    </div>
+    <div id="sucosDiv"></div>
+
+    <a href="L" id="linkOrdenar">Ordenar sucos</a>
+    <a href="L" id="linkShuffle">Embaralhar sucos</a>
+
+    <script>
+        let sucos = ["Uva", "Morango", "Laranja"];
+
+        const carregarDiv = (cervs) => {
+            const div = document.getElementById("sucosDiv");
+            const sucosHtml = cervs.map(item => `<h1>${item}</h1>`);
+            div.innerHTML = sucosHtml.join("\n");
+        };
+
+        const ordenarSucos = () => {
+            sucos.sort();
+            carregarDiv(sucos);
+        };
+
+        const embaralharSucos = () => {
+            sucos.sort(() => Math.random() - 0.5);
+            carregarDiv(sucos);
+        };
+
+        document.getElementById("linkCarregar").addEventListener("click", (event) => {
+            event.preventDefault();
+            carregarDiv(sucos);
+        });
+
+        document.getElementById("linkOrdenar").addEventListener("click", (event) => {
+            event.preventDefault();
+            ordenarSucos();
+        });
+
+        document.getElementById("linkShuffle").addEventListener("click", (event) => {
+            event.preventDefault();
+            embaralharSucos();
+        });
+    </script>
+</body>
+</html>
