@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React 01</title>
+</head>
+<body>
+    <div id="app"></div>
+    <script src="react_examples/libs/react.js"></script>
+    <script src="react_examples/libs/react-dom.js"></script>
+    <script src="react_examples/libs/babel.js"></script>
+
+    <style>
+        table tr:last-child td:first-child {
+            border-bottom-left-radius: 20px;
+        }
+
+        table tr:last-child td:last-child {
+            border-bottom-right-radius: 20px;
+        }
+
+        table th:first-child {
+            border-top-left-radius: 25px;
+        }
+
+        table th:last-child {
+            border-top-right-radius: 25px;
+        }
+
+    
+        table {
+          font-family: Arial, Helvetica, sans-serif;
+          border-collapse: collapse;
+          width: 60%;
+
+        }
+        
+        td, th {
+          border: 1px solid #fffdfd;
+          padding: 8px;
+        }
+        
+        tr:nth-child(even){background-color: #f2f2f2;}
+        
+        tr:hover {background-color: #ffffff6e;}
+        
+        th {
+          padding-top: 12px;
+          padding-bottom: 12px;
+          text-align: left;
+          background-color: #5909ec;
+          color: white;
+          
+        }
+    </style>
+
+
+    <script type="text/babel">
+
+        const bebidas = [
+            {
+                "tipo": "MilkShake",
+                "sabor": "Chocolate",
+                "quantidade": "450ml",
+                "preço": "R$11,00",
+            },
+            {
+                "tipo": "Refrigerante",
+                "sabor": "Laranja",
+                "quantidade": "2L",
+                "preço": "R$9,00",
+            },
+            {
+                "tipo": "Água",
+                "sabor": "Sem sabor",
+                "quantidade": "500ml",
+                "preço": "R$3,00",
+            }
+        ];
+
+        function Tabela() {
+            const linhas = bebidas.map((bebida, index) => (
+
+                <tr key={index}>
+                    <td>{bebida.tipo}</td>
+                    <td>{bebida.sabor}</td>
+                    <td>{bebida.quantidade}</td>
+                    <td>{bebida.preço}</td>
+                </tr>
+            ));
+
+            return (
+                <div>
+                    <h1>Minha Tabela de Bebidas</h1>
+                    <table border="1">
+                        <thead>
+                            <tr>
+                                <th>Tipo</th>
+                                <th>Sabor</th>
+                                <th>Quantidade</th>
+                                <th>Preço</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {linhas}
+                        </tbody>
+                    </table>
+                </div>
+            );
+        }
+
+        function Cabecalho(){
+            return<h1>Minha tabela de bebidas da receita</h1>
+        }
+        function Bebidas(){
+            return(<table id="tabela" border="1">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Preço</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Iti de cria</td>
+                        <td>R$3,50</td>
+                    </tr>
+                </tbody>
+            </table>
+        )
+        }
+           ReactDOM.render(
+                <div>
+                    <Cabecalho/>,
+                    <Bebidas/>,
+                    <Tabela/>,
+                </div>,
+                document.getElementById("app")
+            );
+    </script>
+</body>
+</html>
