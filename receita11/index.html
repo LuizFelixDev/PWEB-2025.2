@@ -7,34 +7,37 @@
    <body>
       <div id="app"></div>
 
-      <script src="libs/react.js"></script>
-      <script src="libs/react-dom.js"></script>
-      <script src="libs/babel.js"></script>
+      <script src="react_examples/libs/react.js"></script>
+      <script src="react_examples/libs/react-dom.js"></script>
+      <script src="react_examples/libs/babel.js"></script>
 
       <script type="text/babel">
 
-         const TabelaBebidas = () => {
-            return (
-               <>
-                  <h1>Tabela de Bebidas</h1>
-                  <table id="tabela" border="1">
-                     <thead>
-                        <tr>
-                           <th>Nome</th>
-                           <th>Marca</th>
-                        </tr>
-                     </thead>
-                     <tbody>
-                        <tr>
-                           <td>Havana</td>
-                           <td>Engenho Anísio Santiago</td>
-                        </tr>
-                     </tbody>
-                  </table>
-               </>
-            )
+         class TabelaBebidas extends React.Component {
+            render(){
+                return (
+                    <div>
+                        <h1>Tabela de Bebidas</h1>
+                        <table id="tabela" border="1">
+                            <thead>
+                                <tr>
+                                    <th>Nome</th>
+                                    <th>Marca</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Havana</td>
+                                    <td>Engenho Anísio Santiago</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                )
+            }
+            
          }
-
+         
          ReactDOM.render(
             <TabelaBebidas/>,
             document.getElementById("app")
