@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>ReceitaReact - Componente Dinâmico</title>      
+      <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f4f4f9;
+        }
+        #tabela {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        #tabela th, #tabela td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        #tabela thead th {
+            background-color: #007bff;
+            color: white;
+            text-transform: uppercase;
+        }
+        #tabela tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        #tabela tbody tr:hover {
+            background-color: #f0f0f0;
+        }
+        h1 {
+            color: #333;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+        }
+      </style>
+   </head>
+
+   <body>
+      <div id="app">
+      </div>
+
+      <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+      <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+      <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+            
+      <script type="text/babel">
+
+         const TabelaBebidas = ({ titulo, cabecalhos, dados }) => {
+            
+            const cabecalhoDinamico = (
+               <tr>
+                  {cabecalhos.map((cabecalho, index) => (
+                     <th key={index}>{cabecalho}</th>
+                  ))}
+               </tr>
+            );
+            
+            const corpoDinamico = dados.map((linha, linhaIndex) => (
+               <tr key={linhaIndex}>
+                  {linha.map((celula, celulaIndex) => (
+                     <td key={celulaIndex}>{celula}</td>
+                  ))}
+               </tr>
+            ));
+
+
+            return (
+               <div>
+                  <h1>{titulo}</h1>
+                  <table id="tabela" border="1">
+                     <thead>
+                        {cabecalhoDinamico}
+                     </thead>
+                     <tbody>
+                        {corpoDinamico}
+                     </tbody >
+                  </table>
+               </div>
+            );
+         };
+
+         const valoresCabecalhos = ["Nome da Bebida", "Marca", "Volume (ml)"];
+         
+         const dadosTabela = [
+            ["Havana", "Engenho Anísio Santiago", 700],
+            ["Seleta", "Salinas", 1000],
+            ["Leblon", "Maison Leblon", 750]
+         ];
+
+         ReactDOM.render(
+            <TabelaBebidas 
+               titulo="Tabela Dinâmica de Cachaças" 
+               cabecalhos={valoresCabecalhos}
+               dados={dadosTabela}
+            />,
+            document.getElementById("app")
+         );
+      </script>
+
+   </body>
+</html>
