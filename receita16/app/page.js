@@ -1,15 +1,11 @@
-import Link from 'next/link'
+import Form from "next/form";
 
-export default function Home(){
-    return (
-        <div>           
-            <div>
-                <h1>
-                    Viva Santana!
-                </h1>
-                <Link href="/novarota">Rota1</Link> <br/><br/>
-                <a href="/novarota">Rota 1, jeito antigo</a>
-            </div>
-        </div>       
-    )
+export default async function MovieForm() {
+  return (
+    <Form action="/movies" method="GET">
+      <label htmlFor="idTitleSearchKey">Título</label>
+      <input id="idTitleSearchKey" name="title" />
+      <button type="submit">Pesquisar</button>
+    </Form>
+  );
 }

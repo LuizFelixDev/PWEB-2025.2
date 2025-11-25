@@ -1,0 +1,20 @@
+{
+  "name": "receita17",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "caniuse-lite": "^1.0.30001757",
+    "client-only": "^0.0.1",
+    "detect-libc": "^2.1.2",
+    "nanoid": "^3.3.11",
+    "next": "^16.0.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
