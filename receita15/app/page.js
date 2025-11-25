@@ -1,15 +1,11 @@
-import Link from 'next/link'
+import { Saudacao } from "./components/Saudacao";
 
-export default function Home(){
-    return (
-        <div>           
-            <div>
-                <h1>
-                    Viva Santana!
-                </h1>
-                <Link href="/novarota">Rota1</Link> <br/><br/>
-                <a href="/novarota">Rota 1, jeito antigo</a>
-            </div>
-        </div>       
-    )
+export default function HomePage() {
+  return (
+    <div>
+      <h1>Bem-vindo à Home da Receita 15</h1>
+      <p>O menu acima veio do `RootLayout`.</p>
+      <Saudacao nome="Página Inicial" />
+    </div>
+  );
 }
