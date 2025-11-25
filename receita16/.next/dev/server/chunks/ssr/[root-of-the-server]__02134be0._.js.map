@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 14, "column": 0}, "map": {"version":3,"sources":["file:///home/luiz/Documentos/PWEB-2025.2/receita16/app/movies/page.js"],"sourcesContent":["export default async function Page() {\n\n    const res = await fetch(\"https://api.jikan.moe/v4/anime?q=naruto\", {\n      cache: \"no-store\"\n    });\n  \n    const data = await res.json();\n  \n    return (\n      <div>\n        {data.data.map((anime) => (\n          <div key={anime.mal_id}>\n            {anime.title} --- {anime.year}\n          </div>\n        ))}\n      </div>\n    );\n  }\n  "],"names":[],"mappings":";;;;;;AAAe,eAAe;IAE1B,MAAM,MAAM,MAAM,MAAM,2CAA2C;QACjE,OAAO;IACT;IAEA,MAAM,OAAO,MAAM,IAAI,IAAI;IAE3B,qBACE,8OAAC;kBACE,KAAK,IAAI,CAAC,GAAG,CAAC,CAAC,sBACd,8OAAC;;oBACE,MAAM,KAAK;oBAAC;oBAAM,MAAM,IAAI;;eADrB,MAAM,MAAM;;;;;;;;;;AAM9B"}}]
+}

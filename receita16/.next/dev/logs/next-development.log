@@ -1,9 +1,8 @@
-[00:00:02.407] Server  LOG      ✓ Ready in 1404ms
-[00:00:15.652] Server  LOG      ○ Compiling / ...
-[00:00:18.937] Server  LOG     montando layout
-[00:00:19.019] Server  LOG     montando layout
-[00:00:20.010] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:20.320] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+[00:00:03.110] Server  LOG      ✓ Ready in 2.2s
+[00:00:17.117] Server  LOG      ○ Compiling / ...
+[00:00:20.101] Server  LOG     montando layout
+[00:00:21.048] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:21.381] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
 
 - A server/client branch `if (typeof window !== 'undefined')`.
 - Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
@@ -35,9 +34,242 @@ It can also happen if the client has a browser extension installed which messes 
                           >
                   ...
 
-[00:00:26.654] Server  LOG     montando layout
-[00:00:27.193] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:28.184] Server  LOG     montando layout
-[00:00:28.785] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:29.727] Server  LOG     montando layout
-[00:00:30.248] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:44.922] Server  LOG     montando layout
+[00:00:45.452] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:52.691] Server  LOG      ✓ Compiled in 62ms
+[00:01:55.145] Server  ERROR    ⨯ Error: The default export is not a React Component in "/movies/page"
+[00:01:56.310] Server  ERROR    ⨯ Error: The default export is not a React Component in "/movies/page"
+[00:01:57.832] Browser ERROR   ./app/movies/page.js:55:21
+Parsing ecmascript source code failed
+  53 |             "themes": [],
+  54 |             "studio": "Studio Pierrot",
+> 55 |             "rating"
+     |                     ^
+  56 |   
+
+Unexpected token `<eof>`. Expected identifier
+[00:01:57.833] Browser ERROR   ./app/movies/page.js:55:21
+Parsing ecmascript source code failed
+  53 |             "themes": [],
+  54 |             "studio": "Studio Pierrot",
+> 55 |             "rating"
+     |                     ^
+  56 |   
+
+Unexpected token `<eof>`. Expected identifier
+[00:01:58.839] Browser ERROR   ./app/movies/page.js:55:21
+Parsing ecmascript source code failed
+  53 |             "themes": [],
+  54 |             "studio": "Studio Pierrot",
+> 55 |             "rating"
+     |                     ^
+  56 |   
+
+Unexpected token `<eof>`. Expected identifier
+[00:01:58.839] Browser ERROR   ./app/movies/page.js:55:21
+Parsing ecmascript source code failed
+  53 |             "themes": [],
+  54 |             "studio": "Studio Pierrot",
+> 55 |             "rating"
+     |                     ^
+  56 |   
+
+Unexpected token `<eof>`. Expected identifier
+[00:01:59.830] Browser ERROR   ./app/movies/page.js:55:21
+Parsing ecmascript source code failed
+  53 |             "themes": [],
+  54 |             "studio": "Studio Pierrot",
+> 55 |             "rating"
+     |                     ^
+  56 |   
+
+Unexpected token `<eof>`. Expected identifier
+[00:01:59.881] Server  ERROR    ⨯ ./app/movies/page.js:55:21
+Parsing ecmascript source code failed
+  53 |             "themes": [],
+  54 |             "studio": "Studio Pierrot",
+> 55 |             "rating"
+     |                     ^
+  56 |   
+
+Unexpected token `<eof>`. Expected identifier
+
+
+[00:02:00.876] Browser ERROR   uncaughtError: Error: ./app/movies/page.js:55:21
+Parsing ecmascript source code failed
+  53 |             "themes": [],
+  54 |             "studio": "Studio Pierrot",
+> 55 |             "rating"
+     |                     ^
+  56 |   
+
+Unexpected token `<eof>`. Expected identifier
+
+
+[00:02:01.834] Browser ERROR   ./app/movies/page.js:55:21
+Parsing ecmascript source code failed
+  53 |             "themes": [],
+  54 |             "studio": "Studio Pierrot",
+> 55 |             "rating"
+     |                     ^
+  56 |   
+
+Unexpected token `<eof>`. Expected identifier
+[00:02:01.834] Browser ERROR   ./app/movies/page.js:55:21
+Parsing ecmascript source code failed
+  53 |             "themes": [],
+  54 |             "studio": "Studio Pierrot",
+> 55 |             "rating"
+     |                     ^
+  56 |   
+
+Unexpected token `<eof>`. Expected identifier
+[00:02:05.170] Server  LOG      ✓ Compiled in 41ms
+[00:02:05.352] Server  LOG     montando layout
+[00:02:05.909] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:03:14.263] Browser ERROR   ./app/movies/page.js:75:6
+Parsing ecmascript source code failed
+  73 |       "totalResults": "59",
+  74 |       "Response": "True"
+> 75 |     }
+     |      ^
+  76 |   
+  77 |
+  78 |   
+
+Expected '}', got '<eof>'
+[00:03:19.933] Browser ERROR   ./app/movies/page.js:75:6
+Parsing ecmascript source code failed
+  73 |       "totalResults": "59",
+  74 |       "Response": "True"
+> 75 |     }
+     |      ^
+  76 |   
+  77 |     
+  78 |   
+
+Expected '}', got '<eof>'
+[00:03:21.213] Browser ERROR   ./app/movies/page.js:85:6
+Parsing ecmascript source code failed
+  83 |         </div>
+  84 |     
+> 85 |     )
+     |      ^
+  86 |   
+
+Expected '}', got '<eof>'
+[00:03:23.677] Browser ERROR   ./app/movies/page.js:85:6
+Parsing ecmascript source code failed
+  83 |         </div>
+  84 |     
+> 85 |     )
+     |      ^
+  86 |     
+  87 |   
+
+Expected '}', got '<eof>'
+[00:03:28.055] Server  LOG     montando layout
+[00:03:28.348] Browser ERROR   Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information. 
+
+Check the top-level render call using <div>. 
+[00:05:14.264] Server  LOG     montando layout
+[00:05:16.259] Server  LOG     montando layout
+[00:07:34.429] Server  LOG      ✓ Compiled in 13ms
+[00:07:34.641] Server  LOG     montando layout
+[00:07:34.694] Server  ERROR    ⨯ ReferenceError: data is not defined
+[00:07:35.834] Browser ERROR   uncaughtError: ReferenceError: data is not defined
+[00:07:39.833] Browser ERROR   ./app/movies/page.js:5:18
+Parsing ecmascript source code failed
+  3 |     const res = await fetch(`http://www.omdbapi.com/?apikey=ME_SUBSTITUA&s=bagdad`)
+  4 |
+> 5 |     const data = await res.json()
+    |                  ^^^^^
+  6 |   
+  7 |     return (
+  8 |         <div>
+
+await isn't allowed in non-async function
+[00:08:21.908] Server  LOG      ✓ Compiled in 33ms
+[00:08:23.959] Server  ERROR    ⨯ Error: The default export is not a React Component in "/movies/page"
+[00:08:25.165] Server  ERROR    ⨯ Error: The default export is not a React Component in "/movies/page"
+[00:08:25.170] Server  LOG      ✓ Compiled in 8ms
+[00:08:25.850] Browser ERROR   uncaughtError: Error: The default export is not a React Component in "/movies/page"
+[00:09:17.113] Server  LOG      ✓ Compiled in 22ms
+[00:09:17.441] Server  LOG     montando layout
+[00:09:18.318] Server  ERROR    ⨯ TypeError: Cannot read properties of undefined (reading 'map')
+[00:09:19.061] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:09:19.834] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'map')
+[00:09:58.089] Server  LOG      ✓ Compiled in 14ms
+[00:09:58.400] Server  LOG     montando layout
+[00:09:59.598] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:09:59.834] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/movies" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.js">
+                      <SegmentTrieNode>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[00:10:32.417] Server  LOG      ✓ Compiled in 7ms
+[00:10:32.615] Server  LOG     montando layout
+[00:10:33.280] Server  ERROR    ⨯ TypeError: fetch failed
+[00:10:33.833] Browser ERROR   uncaughtError: TypeError: fetch failed
+[00:12:07.590] Server  LOG      ✓ Compiled in 13ms
+[00:12:07.858] Server  LOG     montando layout
+[00:12:09.753] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:12:10.836] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/movies" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.js">
+                      <SegmentTrieNode>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
