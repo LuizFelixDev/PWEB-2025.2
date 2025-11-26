@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 14, "column": 0}, "map": {"version":3,"sources":["file:///home/luiz/Documentos/PWEB-2025.2/receita17/app/movieSearch/page.js"],"sourcesContent":["import Form from \"next/form\"\n\nexport default async function MovieForm() {\n    return (\n        <Form action=\"/movies\">\n            <label htmlFor=\"idTitleSearchKey\">Título</label>\n            <input id=\"idTitleSearchKey\" name=\"titleSearchKey\" />\n            <button type=\"submit\">Pesquisar</button>\n        </Form>\n    )\n}\n"],"names":[],"mappings":";;;;;AAAA;;;AAEe,eAAe;IAC1B,qBACI,8OAAC,uKAAI;QAAC,QAAO;;0BACT,8OAAC;gBAAM,SAAQ;0BAAmB;;;;;;0BAClC,8OAAC;gBAAM,IAAG;gBAAmB,MAAK;;;;;;0BAClC,8OAAC;gBAAO,MAAK;0BAAS;;;;;;;;;;;;AAGlC"}}]
+}

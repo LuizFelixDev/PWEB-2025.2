@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 40, "column": 0}, "map": {"version":3,"sources":["file:///home/luiz/Documentos/PWEB-2025.2/receita19/app/api/searchMovies/route.js"],"sourcesContent":["export async function GET(request) {\n    const searchParams = request.nextUrl.searchParams\n    const titleSearchKey = searchParams.get(\"titleSearchKey\")\n\n    const httpRes = await fetch(`http://www.omdbapi.com/?apikey=f1cbc41e&s=${titleSearchKey}`)\n    \n    const jsonRes = await httpRes.json()\n    \n    return Response.json({...jsonRes})\n}"],"names":[],"mappings":";;;;AAAO,eAAe,IAAI,OAAO;IAC7B,MAAM,eAAe,QAAQ,OAAO,CAAC,YAAY;IACjD,MAAM,iBAAiB,aAAa,GAAG,CAAC;IAExC,MAAM,UAAU,MAAM,MAAM,CAAC,0CAA0C,EAAE,gBAAgB;IAEzF,MAAM,UAAU,MAAM,QAAQ,IAAI;IAElC,OAAO,SAAS,IAAI,CAAC;QAAC,GAAG,OAAO;IAAA;AACpC"}}]
+}
