@@ -1,8 +1,8 @@
-[00:00:03.062] Server  LOG      ✓ Ready in 1790ms
-[00:00:11.940] Server  LOG      ○ Compiling /movies ...
-[00:00:14.564] Server  LOG     montando layout
-[00:00:15.410] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:15.715] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+[00:00:03.470] Server  LOG      ✓ Ready in 2.3s
+[00:00:07.149] Server  LOG      ○ Compiling /search ...
+[00:00:10.015] Server  LOG     montando layout
+[00:00:11.365] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:11.661] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
 
 - A server/client branch `if (typeof window !== 'undefined')`.
 - Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
@@ -20,7 +20,7 @@ It can also happen if the client has a browser extension installed which messes 
         <ReplaySsrOnlyErrors>
         <DevRootHTTPAccessFallbackBoundary>
           <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/movies" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+            <HTTPAccessFallbackErrorBoundary pathname="/search" notFound={<NotAllowedRootHTTPFallbackError>} ...>
               <RedirectBoundary>
                 <RedirectErrorBoundary router={{...}}>
                   <Head>
@@ -34,13 +34,4 @@ It can also happen if the client has a browser extension installed which messes 
                           >
                   ...
 
-[00:03:16.244] Server  LOG     montando layout
-[00:03:16.411] Server  LOG     montando layout
-[00:03:16.522] Server  LOG     montando layout
-[00:03:16.795] Server  LOG     montando layout
-[00:03:16.945] Server  LOG     montando layout
-[00:03:17.060] Server  LOG     montando layout
-[00:03:17.169] Server  LOG     montando layout
-[00:03:17.293] Server  LOG     montando layout
-[00:03:52.400] Server  LOG     montando layout
-[00:03:53.085] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:20.091] Browser LOG     Simulando busca com Título: naruto e Ano: 
