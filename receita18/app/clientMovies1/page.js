@@ -4,9 +4,13 @@ import { useState } from "react"
 
 export default function Home(){
     const [resultMovies, setResultMovies] = useState([]);
+    
+    const [searchKey, setSearchKey] = useState(""); 
 
     async function handleAction(formData){
         const titleSearchKey = formData.get("titleSearchKey");
+        
+        setSearchKey(titleSearchKey); 
         
         const apiKey = "f1cbc41e"; 
         
@@ -20,9 +24,9 @@ export default function Home(){
     return (
         <div style={{ padding: '20px' }}>
             <h1>🎥 Pesquisa de Filmes (Client Component com useState)</h1>
-            <p>Os resultados atualizam sem recarregar a página. O formulário é controlado pelo componente pai (Home).</p>
+            <p>O formulário agora mantém o valor após a pesquisa.</p>
             
-            <MovieForm handleAction={handleAction}/>
+            <MovieForm handleAction={handleAction} currentSearchKey={searchKey} />
             
             <hr/>
 
@@ -32,13 +36,14 @@ export default function Home(){
     );
 }
 
-export function MovieForm({ handleAction }){
+export function MovieForm({ handleAction, currentSearchKey }){
     return (
         <form action={handleAction} style={{ border: '1px solid #ddd', padding: '15px', borderRadius: '5px', display: 'inline-block' }}>
             <label htmlFor="idTitleSearchKey" style={{ marginRight: '10px' }}>**Título:**</label>
             <input 
                 id="idTitleSearchKey" 
                 name="titleSearchKey"
+                defaultValue={currentSearchKey}
                 style={{ padding: '5px', border: '1px solid #ccc', marginRight: '10px' }}
                 required
             />
